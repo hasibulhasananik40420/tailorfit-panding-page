@@ -8,11 +8,37 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
+     colors:{
+      primaryColor:'#333',
+      secondaryColor:'#F00C89',
+      secondaryLightColor:'rgba(240, 12, 137, 0.10)',
+      accentColor:'#651A71',
+      switchColor:'rgba(0, 0, 0, 0.60)',
+      switchBgColor:'rgba(0, 0, 0, 0.70)',
+      inputColor:'rgba(255, 255, 255, 0.08)',
+      inputTextColor:'rgba(255, 255, 255, 0.60)',
+
+
+     },
+
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        btnColor:'linear-gradient(96deg, #F30B88 0.94%, #9E24B6 94.94%)',
+
       },
+    
+
+      borderColor:{
+         primaryBorder:'rgba(0, 0, 0, 0.10)'
+      },
+      boxShadow:{
+        Cardone:'0px 0px 49.404px 0px rgba(243, 11, 136, 0.25)'
+      },
+
+      fontFamily:{
+       "Poppins":["Poppins","sans-serif"],
+        "Noto-Sans-Bengali":["Noto Sans Bengali","sans-serif"],
+      }
     },
   },
   plugins: [],
