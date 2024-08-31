@@ -7,7 +7,7 @@ const Contact = () => {
       <div className="w-[100%] lg:flex gap-[50px] items-center">
         <div className="lg:w-[55%] w-full bg-inputColor h-full rounded-[16px]">
           
-               <Image className="w-full h-auto object-contain pl-[60px] pt-[60px]" src={dasgboard} alt="contact image"/>
+               <Image className="w-full h-auto object-contain md:pl-[60px] md:pt-[60px] pl-8 pt-8" src={dasgboard} alt="contact image"/>
           
         </div>
 
@@ -20,13 +20,13 @@ const Contact = () => {
             আপডেট এবং নতুন তথ্য সম্পর্কে সর্বশেষ জানার জন্য আমাদের সাথে থাকুন।
           </p>
 
-          <div className="flex items-center space-x-2 bg-inputColor md:p-3 p-2 rounded-[16px] mt-[48px]">
+          <div className="flex items-center space-x-2 bg-inputColor md:p-3 p-2 rounded-[16px] mt-[48px] w-full">
             <input
               type="email"
               placeholder="আপনার ইমেইল দিন"
-              className="flex-1 bg-transparent md:text-[20px] text-[14px] md:pl-6 pl-4 border-none outline-none text-inputTextColor font-Noto-Sans-Bengali font-normal"
+              className="flex-1 bg-transparent md:text-[20px] text-[14px] md:pl-6 pl-2 border-none outline-none text-inputTextColor font-Noto-Sans-Bengali font-normal"
             />
-            <button className="bg-btnColor text-white md:text-[20px] text-[14px] md:py-[14px] md:px-9 px-4 py-2 font-Noto-Sans-Bengali font-medium rounded-[8px]">
+            <button className="bg-btnColor text-white md:text-[20px] text-[12px] md:py-[14px] md:px-9 px-2 py-2 font-Noto-Sans-Bengali font-medium rounded-[8px]">
               আমাকে জানান
             </button>
           </div>
