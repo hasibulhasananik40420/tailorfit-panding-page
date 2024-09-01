@@ -35,8 +35,8 @@ const MobileSidebar = () => {
 
 
   return (
-    <div className={`h-[12vh] z-50 w-full  fixed top-0 bg-white`}>
-    <div className="flex justify-between items-center h-[12vh] px-4">
+    <div className={` z-50 w-full  fixed top-0`}>
+    <div className="flex justify-between items-center h-[12vh] px-4 bg-white">
        <div>
           <Image className="object-contain w-[160px] h-auto" src={logo} alt="logo svg"/>
        </div>

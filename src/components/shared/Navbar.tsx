@@ -70,7 +70,7 @@ const Navbar = () => {
 
         <div className="flex items-center gap-5">
           <Link
-            href={"/"}
+            href={"https://my.tailorfitapp.com/login"}
             className="bg-secondaryLightColor px-6 py-3 text-secondaryColor text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md"
           >
             <FaUserAlt className="size-6" />
@@ -78,7 +78,7 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href={"/"}
+            href={"https://my.tailorfitapp.com/sign-up"}
             className="bg-secondaryColor text-white px-6 py-3 text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md"
           >
             একাউন্ট খুলুন

@@ -44,10 +44,20 @@ const HowToUse = () => {
            
           <IoMdClose  onClick={closeModal} className='absolute top-2 right-2 text-primaryColor size-6 cursor-pointer' />
 
-            {/* Video */}
-            <div className="rounded-md">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/2pG7yY6eHLs?si=xT0MHMFy71sYB9rC" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
-            </div>
+           
+             <div className="w-full h-[304px]">
+          {/* YouTube Video Embed */}
+            <iframe
+            className="w-full h-full rounded"
+            src="https://www.youtube.com/embed/doSNwHhs7Xg?si=amXhBBcrK8uwaQeF"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe>
+
+
+        </div>
           </div>
         </div>
       )}

@@ -18,6 +18,9 @@ const config: Config = {
       switchBgColor:'rgba(0, 0, 0, 0.70)',
       inputColor:'rgba(255, 255, 255, 0.08)',
       inputTextColor:'rgba(255, 255, 255, 0.60)',
+      primaryBtnColor:'#FEDCEE',
+      secondaryBtnColor:'#651A71',
+
 
 
      },

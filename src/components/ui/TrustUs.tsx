@@ -10,7 +10,7 @@ import Marquee from "react-fast-marquee";
 
 const TrustUs = () => {
   return (
-    <div className='bg-[#651A71] py-12'>
+    <div className='herobg py-12'>
         <div className='max-w-[1920px] mx-auto px-4 md:px-6 lg:px-4 2xl:px-0'>
            <div className=''>
                <h1 className='text-white md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold text-center'>যারা আমাদের উপর আস্থা রেখেছেন</h1>

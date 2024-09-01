@@ -6,19 +6,24 @@ import Testimonial from '@/components/ui/Testimonial'
 import OurFutueres from '@/components/ui/OurFutueres'
 import Contact from '@/components/ui/Contact'
 import React from 'react'
-import TrustUs from '@/components/ui/TrustUs'
 import HowToUse from '@/components/ui/HowToUse'
+import TrustUs from '@/components/ui/TrustUs'
+import Navbar from '@/components/shared/Navbar'
 
 const HomePage = () => {
   return (
     <div>
+      <div className='banner-bg'>
+      <Navbar/>
       <Banner/>
+      </div>
       <TrustUs/>
       <HowToUse/>
-     
       <OurFutueres/>
-       {/* <Testimonial/> */}
+     
+       <Testimonial/>
        <OurPackage/>
+      
        <Contact/>
       <FaqSection/>
       <Footer/>
