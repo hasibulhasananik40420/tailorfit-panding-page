@@ -4,11 +4,12 @@ import FaqSection from '@/components/ui/FaqSection'
 import OurPackage from '@/components/ui/OurPackage'
 import Testimonial from '@/components/ui/Testimonial'
 import OurFutueres from '@/components/ui/OurFutueres'
-import Contact from '@/components/ui/Contact'
 import React from 'react'
 import HowToUse from '@/components/ui/HowToUse'
 import TrustUs from '@/components/ui/TrustUs'
 import Navbar from '@/components/shared/Navbar'
+import OurMainFutures from '@/components/ui/OurMainFutures'
+import ScrollToTop from '@/components/ui/ScrollToTop'
 
 const HomePage = () => {
   return (
@@ -19,13 +20,17 @@ const HomePage = () => {
       </div>
       <TrustUs/>
       <HowToUse/>
-      <OurFutueres/>
-     
+       <OurMainFutures/>
        <Testimonial/>
        <OurPackage/>
+       <FaqSection/>
+      <OurFutueres/>
+     
       
-       <Contact/>
-      <FaqSection/>
+      
+      
+       {/* <Contact/> */}
+      <ScrollToTop/>
       <Footer/>
     </div>
   )

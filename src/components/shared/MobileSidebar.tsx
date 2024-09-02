@@ -47,7 +47,8 @@ const MobileSidebar = () => {
 
     {isMenuVisible && (
   
-    <div ref={sidebarRef} className="fixed top-0 right-0 h-screen w-[80%] z-50 bg-black p-4 text-white ">
+      <div className="">
+         <div ref={sidebarRef} className="fixed top-0 right-0 h-screen w-[80%] z-50 p-4 text-white backdrop-blur-xl bg-white/70 shadow-navShadow2">
         <span className="flex justify-between items-center">
         <Image className="object-contain w-[160px] h-auto" src={logo} alt="logo svg"/>
         <VscChromeClose onClick={handleMenuClick} className="size-6 text-red-500 cursor-pointer"/>
@@ -60,23 +61,30 @@ const MobileSidebar = () => {
 
            <Link
             href={"/"}
-            className="text-white text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
           >
-            আমাদের সম্পর্কে
+           প্রশংসাপত্র
           </Link>
 
           <Link
             href={"/"}
-            className="text-white text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+          >
+           টিউটোরিয়াল
+          </Link>
+
+          <Link
+            href={"/"}
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
           >
             প্রাইস প্লান
           </Link>
-
-          <Link
+          
+           <Link
             href={"/"}
-            className="text-white text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
           >
-            আপকামিং
+            কিভাবে ব্যবহার করে
           </Link>
          
         
@@ -84,7 +92,7 @@ const MobileSidebar = () => {
         
           <Link
             href={"/"}
-            className="bg-secondaryColor px-6 py-3 text-white text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md"
+            className="bg-secondaryColor px-6 py-3 text-white text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md hover:bg-btnColor hover:text-white duration-300"
           >
             <FaUserAlt className="size-6" />
             <p>মাই একাউন্ট</p>
@@ -92,7 +100,7 @@ const MobileSidebar = () => {
 
           <Link
             href={"/"}
-            className="bg-secondaryColor text-white px-6 py-3 text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md"
+            className="bg-secondaryColor text-white px-6 py-3 text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md hover:bg-btnColor hover:text-white duration-300"
           >
             একাউন্ট খুলুন
           </Link>
@@ -102,6 +110,7 @@ const MobileSidebar = () => {
 
          </div>
     </div>
+      </div>
   )}
 </div>
   )

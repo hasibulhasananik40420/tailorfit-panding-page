@@ -27,7 +27,7 @@ const Contact = () => {
 
 
   return (
-    <div className="max-w-[1290px] mx-auto mt-16 md:mt-[100px]">
+    <div className="max-w-[1290px] mx-auto my-16 md:my-[100px]">
        <div className="bg-[#651A71] mx-4 md:mx-6 lg:mx-4 2xl:mx-0 rounded-[12px] 2xl:p-10 p-4">
       <div className="w-[100%] lg:flex gap-[50px] items-center">
         <div className="lg:w-[55%] w-full bg-inputColor h-full rounded-[16px]">

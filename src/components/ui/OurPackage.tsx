@@ -1,5 +1,7 @@
 
+import Image from "next/image";
 import { IoCheckmark } from "react-icons/io5";
+import masking from "@/assets/masking.png"
 
 const OurPackage = () => {
   return (
@@ -65,7 +67,7 @@ const OurPackage = () => {
               </div>
             </div>
 
-            <button className="mt-[30px] w-full bg-primaryBtnColor py-[14px] text-[18px] text-secondaryColor font-Noto-Sans-Bengali font-medium rounded-md">
+            <button className="mt-[30px] w-full bg-primaryBtnColor py-[14px] text-[18px] text-secondaryColor font-Noto-Sans-Bengali font-medium rounded-md hover:bg-btnColor hover:text-white duration-300">
               বিনামূল্যে শুরু করুন
             </button>
 
@@ -138,9 +140,9 @@ const OurPackage = () => {
           <div className="relative bg-white w-full px-[25px] py-[30px] rounded-md">
              
              
-          <div className="absolute left-0 bg-btnColor text-white text-[18px] font-Poppins font-normal text-center px-10 h-[30px] transform -rotate-[30deg] origin-top-left">
-        জনপ্রিয়
-      </div>
+         
+
+           <Image className="object-contain absolute left-0 top-0" src={masking} alt='masking'/>
            
             <h1 className="text-primaryColor text-center text-[20px] font-Noto-Sans-Bengali font-bold">
             প্রিমিয়াম
@@ -191,7 +193,7 @@ const OurPackage = () => {
               </div>
             </div>
 
-            <button className="mt-[30px] w-full bg-primaryBtnColor py-[14px] text-[18px] text-secondaryColor font-Noto-Sans-Bengali font-medium rounded-md">
+            <button className="mt-[30px] w-full bg-primaryBtnColor py-[14px] text-[18px] text-secondaryColor font-Noto-Sans-Bengali font-medium rounded-md hover:bg-btnColor hover:text-white duration-300">
             শুরু করুন
             </button>
 
@@ -253,7 +255,7 @@ const OurPackage = () => {
               </div>
             </div>
 
-            <button className="mt-[30px] w-full bg-primaryBtnColor py-[14px] text-[18px] text-secondaryColor font-Noto-Sans-Bengali font-medium rounded-md">
+            <button className="mt-[30px] w-full bg-primaryBtnColor py-[14px] text-[18px] text-secondaryColor font-Noto-Sans-Bengali font-medium rounded-md hover:bg-btnColor hover:text-white duration-300">
             শুরু করুন
             </button>
 

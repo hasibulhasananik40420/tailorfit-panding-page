@@ -7,7 +7,7 @@ const Banner = () => {
   return (
     <div>
       <div className="lg:block hidden">
-        <div className="max-w-[1920px] mx-auto 2xl:pt-[100px] 2xl:pb-[60px] pt-[90px] pb-[50px] px-4 md:px-6 lg:px-0">
+        <div className="max-w-[1920px] mx-auto 2xl:pt-[100px] 2xl:pb-[60px] pt-[90px] pb-[45px] px-4 md:px-6 lg:px-0">
         <div className="lg:flex items-center relative w-[100%] h-full">
              <div className="lg:w-[570px] w-full 2xl:ml-[250px] lg:ml-32 ml-0">
                  <h1 className="text-accentColor md:text-[70px] text-[45px] font-Noto-Sans-Bengali font-black 2xl:leading-[91px] lg:leading-[86px] leading-[60px]">আপনার টেইলার

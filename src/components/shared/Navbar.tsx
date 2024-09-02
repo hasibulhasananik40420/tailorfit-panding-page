@@ -38,7 +38,7 @@ const Navbar = () => {
      <div className={`w-full`}>
        <div className="lg:block hidden">
      
-        <div className={`!z-50 w-full transition-all duration-300 ease-in-out ${isFixed ? 'bg-white fixed top-0 ' : ''}`}>
+        <div className={`!z-50 w-full transition-all duration-300 ease-in-out ${isFixed ? 'bg-white fixed top-0 shadow-navShadow' : ''}`}>
         <div className={`max-w-[1920px] mx-auto  flex justify-between items-center px-4 h-[12vh] w-full`}>
         <div>
           <Logo />
@@ -50,7 +50,14 @@ const Navbar = () => {
             href={"/"}
             className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
           >
-            আমাদের সম্পর্কে
+           প্রশংসাপত্র
+          </Link>
+
+          <Link
+            href={"/"}
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+          >
+           টিউটোরিয়াল
           </Link>
 
           <Link
@@ -59,30 +66,39 @@ const Navbar = () => {
           >
             প্রাইস প্লান
           </Link>
-
-          <Link
+          
+           <Link
             href={"/"}
             className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
           >
-            আপকামিং
+            কিভাবে ব্যবহার করে
           </Link>
         </div>
 
         <div className="flex items-center gap-5">
-          <Link
+          {/* <Link
             href={"https://my.tailorfitapp.com/login"}
-            className="bg-secondaryLightColor px-6 py-3 text-secondaryColor text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md"
+            className="bg-secondaryLightColor px-6 py-3 text-secondaryColor text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md hover:bg-btnColor hover:text-white duration-300"
           >
             <FaUserAlt className="size-6" />
             <p>মাই একাউন্ট</p>
-          </Link>
+          </Link> */}
 
           <Link
             href={"https://my.tailorfitapp.com/sign-up"}
-            className="bg-secondaryColor text-white px-6 py-3 text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md"
+            className="bg-secondaryColor text-white px-6 py-3 text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md hover:bg-btnColor duration-300"
           >
             একাউন্ট খুলুন
           </Link>
+
+             <Link
+            href={"https://my.tailorfitapp.com/login"}
+            className="bg-secondaryLightColor w-12 h-12 rounded-md flex justify-center items-center text-secondaryColor"
+          >
+            <FaUserAlt className="size-6" />
+            
+          </Link>
+          
         </div>
       </div>
         </div>

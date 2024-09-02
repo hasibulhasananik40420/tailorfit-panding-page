@@ -20,6 +20,7 @@ const config: Config = {
       inputTextColor:'rgba(255, 255, 255, 0.60)',
       primaryBtnColor:'#FEDCEE',
       secondaryBtnColor:'#651A71',
+      faqColor:'rgba(240, 12, 137, 0.10)'
 
 
 
@@ -35,7 +36,10 @@ const config: Config = {
          primaryBorder:'rgba(0, 0, 0, 0.10)'
       },
       boxShadow:{
-        Cardone:'0px 0px 49.404px 0px rgba(243, 11, 136, 0.25)'
+        Cardone:'0px 0px 49.404px 0px rgba(243, 11, 136, 0.25)',
+        navShadow:'0px 10px 30px 0px rgba(101, 26, 113, 0.10)',
+        navShadow2:'-10px 0px 30px 0px rgba(101, 26, 113, 0.25)',
+        cardShadow:'0px 4px 4px 0px rgba(0, 0, 0, 0.25)'
       },
 
       fontFamily:{
