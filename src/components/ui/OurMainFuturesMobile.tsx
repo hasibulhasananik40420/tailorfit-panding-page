@@ -8,7 +8,6 @@ import image3 from "@/assets/Upcoming Features.png";
 import image4 from "@/assets/dashboard (2).png";
 import image5 from "@/assets/banner (2).png";
 import image6 from "@/assets/imagecut.png";
-import OurMainFuturesMobile from "./OurMainFuturesMobile";
 
 interface Feature {
   id: number;
@@ -110,72 +109,56 @@ const features:Feature[] = [
   },
 ]
 
-const OurMainFutures = () => {
-
-  const [selectedImage, setSelectedImage] = useState<StaticImageData>(features[0].image); 
-
-  const handleCardClick = (image: StaticImageData) => {
-    setSelectedImage(image); 
-  };
+const OurMainFuturesMobile = () => {
 
 
-  
+
+const [selectedImage, setSelectedImage] = useState<StaticImageData | null>(null);
+
+const handleCardClick = (image: StaticImageData) => {
+  setSelectedImage((prevImage) => (prevImage === image ? null : image));
+};
 
 
 
   return (
-    <div className="bg-[#F0E8F1] md:py-[100px] py-16">
-      <div className="max-w-[1290px] mx-auto px-4 md:px-6 lg:px-4 2xl:px-0">
-        <h1 className="text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold">
-          {" "}
-          আমাদের ফিচারস সমূহ
-        </h1>
+    <div className="bg-[#F0E8F1] ">
+      <div className="">
+       
 
 
-        <div className="lg:block hidden">
-        <div className="w-[100%] lg:flex gap-[30px] md:mt-[60px] mt-10">
-         
 
-         <div className="lg:w-[50%] w-full mt-10 lg:mt-0">
-           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-[30px]">
-            
-              {features.map((feature) => (
-               <div
-                 key={feature.id}
-                 className={`w-full p-5 bg-white border-[1.5px] border-primaryBorder rounded-md cursor-pointer  ${selectedImage === feature.image ? 'border-secondaryColor banner-bg' : 'border-primaryBorder'}`}
-                 onClick={() => handleCardClick(feature.image)}
-               >
-                 {feature.svg}
-                 <h3 className="mt-5 text-primaryColor 2xl:text-[20px] text-[18px] font-Noto-Sans-Bengali font-bold">
-                   {feature.title}
-                 </h3>
+<div className="w-[100%] lg:flex gap-[30px] md:mt-[60px] mt-10">
+      <div className="lg:w-[50%] w-full mt-10 lg:mt-0">
+        <div className="grid grid-cols-1 md:grid-cols-1 gap-[30px]">
+          {features.map((feature) => (
+            <div key={feature.id} className="relative">
+              <div
+                className={`w-full p-5 md:p-8 bg-white border-[1.5px] border-primaryBorder rounded-md cursor-pointer ${selectedImage === feature.image ? 'border-secondaryColor banner-bg' : 'border-primaryBorder'}`}
+                onClick={() => handleCardClick(feature.image)}
+              >
+                {feature.svg}
+                <h3 className="mt-5 text-primaryColor md:text-[20px] text-[18px] font-Noto-Sans-Bengali font-bold">
+                  {feature.title}
+                </h3>
+              </div>
 
-                 
-               </div>
-
-
-                 
-             ))}
-
-
-           </div>
-         </div>
-
-         <div className="lg:w-[50%] w-full lg:max-h-[342px] h-full mt-10 lg:mt-0">
-           <Image
-             className="w-full h-auto object-contain"
-             src={selectedImage}
-             alt="Upcoming Features"
-           />
-         </div>
-       </div>
+              {/* Conditionally render image below the clicked card */}
+              {selectedImage === feature.image && (
+                <div className="mt-4">
+                  <Image
+                    className="w-full h-auto object-contain"
+                    src={feature.image}
+                    alt={feature.title}
+                  />
+                </div>
+              )}
+            </div>
+          ))}
         </div>
-
-
-        <div className="lg:hidden block">
-           <OurMainFuturesMobile/>
-        </div>
-
+      </div>
+    </div>
+       
 
 
       </div>
@@ -183,4 +166,4 @@ const OurMainFutures = () => {
   );
 };
 
-export default OurMainFutures;
+export default OurMainFuturesMobile;

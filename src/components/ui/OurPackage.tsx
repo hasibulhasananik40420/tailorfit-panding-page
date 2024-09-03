@@ -5,10 +5,11 @@ import masking from "@/assets/masking.png"
 
 const OurPackage = () => {
   return (
-    <div className="bg-[#F0E8F1] md:py-[100px] py-16 my-16 md:my-[100px]">
+    <div className="bg-[#F0E8F1] md:py-[100px] py-16 my-16 md:my-[100px]" id="pricing-plan">
      
          <div className="max-w-[1290px] mx-auto px-4 md:px-6 lg:px-4 2xl:px-0">
-         <h1 className="text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold">  আমাদের সহজলভ্য প্যাকেজ সমূহ</h1>
+         <h1 className="text-center text-primaryColor md:text-[56px] text-[40px] font-Noto-Sans-Bengali font-bold md:block hidden">  আমাদের সহজলভ্য প্যাকেজ সমূহ</h1>
+         <h1 className="text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold md:hidden block">  আমাদের সহজলভ্য <br /> প্যাকেজ সমূহ</h1>
          <div className=" w-[100%] grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[30px]  md:mt-[60px] mt-10">
            
        

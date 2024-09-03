@@ -27,9 +27,6 @@ const HomePage = () => {
       <OurFutueres/>
      
       
-      
-      
-       {/* <Contact/> */}
       <ScrollToTop/>
       <Footer/>
     </div>

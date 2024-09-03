@@ -5,16 +5,19 @@ import { useState } from 'react';
 import { FaPlay } from "react-icons/fa";
 import { IoMdClose } from 'react-icons/io';
 import styles from '@/components/styles/Pulse.module.css'
+
 const HowToUse = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
     const closeModal = () => setIsModalOpen(false);
   return (
-    <div className='bg-white md:py-[100px] py-16'>
+    <div className='bg-white md:py-[100px] py-16' id="how-to-use">
         <div className='max-w-[1290px] mx-auto w-[100%] px-4 md:px-6 lg:px-4 2xl:px-0 relative'>
 
-             <h1 className='text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold'>আমাদের সফটওয়্যার কিভাবে ব্যবহার করবেন?</h1>
+             <h1 className='text-center text-primaryColor md:text-[56px] text-[40px] font-Noto-Sans-Bengali font-bold md:block hidden'>আমাদের সফটওয়্যার কিভাবে ব্যবহার করবেন?</h1> 
+             
+              <h1 className='text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold md:hidden block'>আমাদের সফটওয়্যার <br /> কিভাবে ব্যবহার করবেন?</h1>
                
                <div className='bg-[#F0E8F1] lg:pt-[30px] lg:pl-[30px] pt-5 pl-5 md:mt-[60px] mt-10' style={{borderRadius:'60px 0px 0px 0px'}}>
                   <div className='bg-[#651A71] lg:pl-[88px] lg:pt-[88px] pt-10 pl-10' style={{borderRadius:'35px 0px 35px 0px'}}>
@@ -29,7 +32,7 @@ const HowToUse = () => {
                </div>
 
 
-                <div className='flex flex-col md:gap-10 gap-5 justify-center items-center absolute inset-0 lg:top-[30%] top-[50%]'>
+                <div className='flex flex-col md:gap-10 gap-5 justify-center items-center absolute inset-0 lg:top-[30%] md:top-[50%] top-[60%]'>
                  
             <div onClick={openModal} className='relative flex justify-center items-center cursor-pointer'>
            
@@ -72,7 +75,7 @@ const HowToUse = () => {
       )}
 
       <div>
-      <h1 className='text-white md:text-[56px] text-[20px] font-Noto-Sans-Bengali font-bold'>ভিডিও তে বিস্তারিত দেখুন </h1>
+      <h1 className='text-white lg::text-[56px] md:text-[40px] text-[20px] font-Noto-Sans-Bengali font-bold'>ভিডিও তে বিস্তারিত দেখুন </h1>
       </div>
             </div>
         </div>

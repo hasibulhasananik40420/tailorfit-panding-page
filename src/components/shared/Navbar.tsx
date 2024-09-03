@@ -3,9 +3,11 @@
 import Link from "next/link";
 import { FaUserAlt } from "react-icons/fa";
 import Logo from "../ui/Logo";
-import Container from "./Container";
 import { useEffect, useState } from "react";
 import MobileSidebar from "./MobileSidebar";
+import SwitchTab from "./SwitchTab";
+import { Link as ScrollLink } from 'react-scroll';
+
 
 const Navbar = () => {
     
@@ -44,45 +46,73 @@ const Navbar = () => {
           <Logo />
         </div>
 
-        <div className="flex items-center gap-[48px]">
+        <div className="flex items-center gap-[38px] 2xl:gap-[48px]">
           
-          <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+        <ScrollLink 
+               to="testmonial"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+          <div
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
            প্রশংসাপত্র
-          </Link>
+          </div>
+          </ScrollLink>
 
-          <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+
+
+           
+          {/* <ScrollLink 
+               to="tutorial"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+          <div
+          
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
            টিউটোরিয়াল
-          </Link>
+          </div>
 
-          <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+          </ScrollLink> */}
+
+
+          <ScrollLink 
+               to="pricing-plan"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+          <div
+          
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
             প্রাইস প্লান
-          </Link>
+          </div>
+          </ScrollLink>
+
           
-           <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+
+          <ScrollLink 
+               to="how-to-use"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+           <div
+         
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
             কিভাবে ব্যবহার করে
-          </Link>
+          </div>
+          </ScrollLink>
+
+
+
         </div>
 
         <div className="flex items-center gap-5">
-          {/* <Link
-            href={"https://my.tailorfitapp.com/login"}
-            className="bg-secondaryLightColor px-6 py-3 text-secondaryColor text-[20px] font-Noto-Sans-Bengali font-medium flex items-center justify-center gap-2 rounded-md hover:bg-btnColor hover:text-white duration-300"
-          >
-            <FaUserAlt className="size-6" />
-            <p>মাই একাউন্ট</p>
-          </Link> */}
+         
+          <SwitchTab/>
 
           <Link
             href={"https://my.tailorfitapp.com/sign-up"}

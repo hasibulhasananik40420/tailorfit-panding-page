@@ -49,7 +49,8 @@ const FaqSection = () => {
        <div className="bg-white">
            
           <div className="max-w-[1290px] mx-auto px-4 md:px-6 lg:px-4 2xl:px-0">
-          <h1 className="text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold">  আমাদের সম্পর্কে সাধারণ জিজ্ঞাসা</h1>
+          <h1 className="text-center text-primaryColor md:text-[56px] text-[40px] font-Noto-Sans-Bengali font-bold md:block hidden">  আমাদের সম্পর্কে সাধারণ জিজ্ঞাসা</h1>
+          <h1 className="text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold md:hidden block">  আমাদের সম্পর্কে <br /> সাধারণ জিজ্ঞাসা</h1>
           <div className=" w-[100%] lg:flex gap-6 md:mt-[60px] mt-10">
          
          <div className="lg:w-[50%] w-full">
@@ -72,11 +73,13 @@ const FaqSection = () => {
          </h2>
         
 
-                   {openIndex === index ? (
+                  <div className="w-6 h-6 ">
+                  {openIndex === index ? (
                       <FiMinus className="size-6 text-primaryColor transition-transform duration-300 group-hover:text-[#651A71]" />
                     ) : (
                       <FiPlus className="size-6 text-primaryColor transition-transform duration-300 group-hover:text-[#651A71]" />
                     )}
+                  </div>
            </div>
         <div
          className={`overflow-hidden transition-max-height duration-300 ease-in-out ${

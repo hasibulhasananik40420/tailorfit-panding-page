@@ -1,4 +1,4 @@
-import React from 'react'
+// "use client"
 import image1 from '@/assets/Mask group (1).png'
 import image2 from '@/assets/Mask group (2).png'
 import image3 from '@/assets/Mask group (3).png'
@@ -6,14 +6,24 @@ import image4 from '@/assets/Mask group (4).png'
 import image5 from '@/assets/Raymond Group Logo Vector 1.png'
 import Image from 'next/image'
 import Marquee from "react-fast-marquee";
+// import { useTranslation } from "react-i18next";
 
 
 const TrustUs = () => {
+  // const { t } = useTranslation();
+
   return (
     <div className='herobg py-12'>
         <div className='max-w-[1920px] mx-auto px-4 md:px-6 lg:px-4 2xl:px-0'>
            <div className=''>
-               <h1 className='text-white md:text-[56px] text-[35px] font-Noto-Sans-Bengali font-bold text-center'>যারা আমাদের উপর আস্থা রেখেছেন</h1>
+               <h1 className='text-white md:text-[56px] text-[40px] font-Noto-Sans-Bengali font-bold text-center md:block hidden'>
+                যারা আমাদের উপর আস্থা রেখেছেন
+                {/* {t("Customer Information")} */}
+                </h1>
+                <h1 className='text-white md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold text-center md:hidden block'>
+                যারা আমাদের <br /> উপর আস্থা রেখেছেন
+                {/* {t("Customer Information")} */}
+                </h1>
                <Marquee speed={100} gradient={false}>
                 <div className='flex justify-center items-center gap-[180px] mt-[20px]'>
                    <Image className=' object-contain' src={image2} alt='logo 1'/>

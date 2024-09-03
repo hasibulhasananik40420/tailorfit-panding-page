@@ -9,11 +9,12 @@ const Testimonial = () => {
   const [showVideoFour, setShowVideoFour] = useState(false);
 
   return (
-    <div className='bg-white'>
+    <div className='bg-white py-6' id="testmonial">
       
         <div className='max-w-[1290px] mx-auto w-[100%] px-4 md:px-6 lg:px-4 2xl:px-0 mt-[60px]'>
 
-            <h1 className='text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold'>ব্যবহারকারীর আস্থাই আমাদের অর্জন</h1>
+            <h1 className='text-center text-primaryColor md:text-[56px] text-[40px] font-Noto-Sans-Bengali font-bold md:block hidden'>ব্যবহারকারীর আস্থাই আমাদের অর্জন</h1>
+            <h1 className='text-center text-primaryColor md:text-[56px] text-[30px] font-Noto-Sans-Bengali font-bold md:hidden block'>ব্যবহারকারীর আস্থাই <br /> আমাদের অর্জন</h1>
 
              <div className='grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-[30px] md:mt-[60px] mt-10'>
             
@@ -57,7 +58,7 @@ const Testimonial = () => {
 
           <div onClick={() => setShowVideo(true)} className="cursor-pointer">
             <svg
-              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full"
+              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full mx-auto mt-5 md:mx-0 md:mt-0"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 90 90"
               fill="none"
@@ -132,7 +133,7 @@ const Testimonial = () => {
 
           <div onClick={() => setShowVideoTwo(true)} className="cursor-pointer">
             <svg
-              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full"
+              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full mx-auto mt-5 md:mx-0 md:mt-0"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 90 90"
               fill="none"
@@ -207,7 +208,7 @@ const Testimonial = () => {
 
           <div onClick={() => setShowVideoThree(true)} className="cursor-pointer">
             <svg
-              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full"
+              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full mx-auto mt-5 md:mx-0 md:mt-0"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 90 90"
               fill="none"
@@ -281,7 +282,7 @@ const Testimonial = () => {
 
           <div onClick={() => setShowVideoFour(true)} className="cursor-pointer">
             <svg
-              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full"
+              className="md:w-[90px] md:h-[90px] w-16 h-16 rounded-full mx-auto mt-5 md:mx-0 md:mt-0"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 90 90"
               fill="none"

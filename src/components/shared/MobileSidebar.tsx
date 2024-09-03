@@ -6,6 +6,10 @@ import { CiMenuBurger } from "react-icons/ci";
 import { FaUserAlt } from "react-icons/fa";
 import { VscChromeClose } from "react-icons/vsc";
 import logo from '@/assets/logo.svg'
+import { Link as ScrollLink } from 'react-scroll';
+
+
+
 const MobileSidebar = () => {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
     const sidebarRef = useRef<HTMLDivElement>(null);
@@ -17,10 +21,8 @@ const MobileSidebar = () => {
       };
     
       useEffect(() => {
-        // Add event listener for clicks outside of the sidebar
         document.addEventListener('mousedown', handleClickOutside);
     
-        // Clean up event listener on component unmount
         return () => {
           document.removeEventListener('mousedown', handleClickOutside);
         };
@@ -38,10 +40,10 @@ const MobileSidebar = () => {
     <div className={` z-50 w-full  fixed top-0`}>
     <div className="flex justify-between items-center h-[12vh] px-4 bg-white">
        <div>
-          <Image className="object-contain w-[160px] h-auto" src={logo} alt="logo svg"/>
+          <Image className="object-contain w-[160px] h-auto cursor-pointer" src={logo} alt="logo svg"/>
        </div>
         <div>
-           <CiMenuBurger onClick={handleMenuClick} className="size-6 text-black cursor-pointer"/>
+           <CiMenuBurger onClick={handleMenuClick} className="size-6 text-black hover:text-secondaryColor cursor-pointer"/>
         </div>
     </div>
 
@@ -59,33 +61,64 @@ const MobileSidebar = () => {
 
          
 
-           <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+           <ScrollLink 
+               to="testmonial"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+          <div
+           onClick={handleMenuClick}
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
            প্রশংসাপত্র
-          </Link>
+          </div>
+          </ScrollLink>
 
-          <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+
+
+           
+          {/* <ScrollLink 
+               to="tutorial"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+          <div
+            onClick={handleMenuClick}
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
            টিউটোরিয়াল
-          </Link>
+          </div>
 
-          <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+          </ScrollLink> */}
+
+
+          <ScrollLink 
+               to="pricing-plan"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+          <div
+          onClick={handleMenuClick}
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
             প্রাইস প্লান
-          </Link>
+          </div>
+          </ScrollLink>
+
           
-           <Link
-            href={"/"}
-            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor"
+
+          <ScrollLink 
+               to="how-to-use"  
+                  spy={true}
+                  smooth={true}
+                  duration={1000}>
+           <div
+           onClick={handleMenuClick}
+            className="text-primaryColor text-[20px] font-Noto-Sans-Bengali font-medium relative inline-block after:absolute after:bottom-0 after:left-0 after:w-0 after:h-[2px] after:bg-secondaryColor after:transition-all after:duration-500 hover:after:w-full hover:text-secondaryColor cursor-pointer"
           >
             কিভাবে ব্যবহার করে
-          </Link>
+          </div>
+          </ScrollLink>
          
         
           
